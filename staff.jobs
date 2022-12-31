@@ -1,0 +1,28 @@
+
+[1mFrom:[0m /home/ec2-user/environment/random/jesse_oop_practice/matz_brew_co.rb:314 Game#staff_activities:
+
+    [1;34m303[0m: [32mdef[0m [1;34mstaff_activities[0m
+    [1;34m304[0m:   brewery.brewery_team.each [32mdo[0m |staff|
+    [1;34m305[0m:     display_situation
+    [1;34m306[0m:     puts [31m[1;31m"[0m[31m[1;31m"[0m[31m[0m
+    [1;34m307[0m:     activity = [1;36mnil[0m
+    [1;34m308[0m:     loop [32mdo[0m
+    [1;34m309[0m:       puts [31m[1;31m"[0m[31m#{staff.name}[0m[31m can #{staff.jobs}[0m[31m[1;31m"[0m[31m[0m
+    [1;34m310[0m:       puts [31m[1;31m"[0m[31mWhat would you like them to do? [1;31m"[0m[31m[0m
+    [1;34m311[0m:       activity = gets.chomp
+    [1;34m312[0m:       [32mbreak[0m [32mif[0m staff.jobs.include?(activity)
+    [1;34m313[0m:       puts [31m[1;31m"[0m[31mThat's not a valid job![1;31m"[0m[31m[0m
+ => [1;34m314[0m:       binding.pry
+    [1;34m315[0m:     [32mend[0m
+    [1;34m316[0m:     [32mcase[0m activity.downcase
+    [1;34m317[0m:     [32mwhen[0m [31m[1;31m'[0m[31mb[1;31m'[0m[31m[0m [32mthen[0m brewery.brew_beer
+    [1;34m318[0m:     [32mwhen[0m [31m[1;31m'[0m[31mf[1;31m'[0m[31m[0m [32mthen[0m brewery.ferment_beer
+    [1;34m319[0m:     [32mwhen[0m [31m[1;31m'[0m[31mp[1;31m'[0m[31m[0m [32mthen[0m brewery.package_beer
+    [1;34m320[0m:     [32mwhen[0m [31m[1;31m'[0m[31ms[1;31m'[0m[31m[0m [32mthen[0m brewery.serve_beer
+    [1;34m321[0m:     [32mwhen[0m [31m[1;31m'[0m[31mc[1;31m'[0m[31m[0m [32mthen[0m brewery.clean_tanks
+    [1;34m322[0m:     [32mwhen[0m [31m[1;31m'[0m[31mr[1;31m'[0m[31m[0m [32mthen[0m puts [31m[1;31m"[0m[31mTaking it easy[1;31m"[0m[31m[0m
+    [1;34m323[0m:     [32mend[0m
+    [1;34m324[0m:     pause_before_screen_clear
+    [1;34m325[0m:   [32mend[0m
+    [1;34m326[0m: [32mend[0m
+
